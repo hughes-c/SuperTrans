@@ -1,0 +1,37 @@
+## This README contains quickstart command line options to begin simulating using the 
+## precompiled transactional benchmarks for SuperTrans immediately. For alternate
+## command options, more in-depth documentation, as well as complete source code;
+## please refer to:
+##
+##   http://stamp.stanford.edu/
+##
+
+
+# For examples below:
+#    replace ${PNUM} with number of cores/threads
+#    replace ${BENCHDIR} with path to benchmark dir
+
+
+# Bayes
+bayes.mips.tm -t${PNUM} -v32 -r1024 -n2 -p20 -s0 -i2 -e2
+
+# Genome
+genome.mips.tm -g256 -s16 -n16384 -t${PNUM}
+
+# Intruder
+intruder.mips.tm -t${PNUM} -a10 -l4 -n2038 -s1
+
+# Kmeans
+kmeans.mips.tm -m40 -n40 -t0.05 -p${PNUM} -i ${BENCHDIR}/random1000_12
+
+# Labyrinth
+labyrinth.mips.tm -t${PNUM} -i ${BENCHDIR}/random-x32-y32-z3-n96.txt
+
+# Ssca2
+ssca2.mips.tm -t${PNUM} -s11 -i1.0 -u1.0 -l3 -p3
+
+# Vacation
+vacation.mips.tm -c${PNUM} -n2 -q90 -u98 -r16384 -t4096
+
+# Yada
+yada.mips.tm -t${PNUM} -a20 -i ${BENCHDIR}/633.2

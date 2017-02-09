@@ -1,0 +1,15 @@
+**/.o
+**/.libs/
+**/.deps/
+**/.dirstamp
+**/Makefile.in
+*.o
+.libs/
+.deps/
+.dirstamp
+build_info.h
+aclocal.m4
+autom4te.cache
+config.log
+config.status
+*~

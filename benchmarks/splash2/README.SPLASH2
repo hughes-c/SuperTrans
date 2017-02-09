@@ -1,0 +1,44 @@
+## This README contains quickstart command line options to begin simulating using the 
+## precompiled transactional benchmarks for SuperTrans immediately. For alternate
+## command options, more in-depth documentation, as well as complete source code;
+## please refer to:
+##
+##   http://stamp.stanford.edu/
+##
+
+
+# For examples below:
+#    replace ${PNUM} with number of cores/threads
+#    replace ${BENCHDIR} with path to benchmark dir
+
+# Barnes
+# Note for barnes to adjust ${PNUM} you will need to
+# modify the input file barnes.input.08p
+barnes.mips.tm < ${BENCHDIR}barnes.input.08p
+
+# Cholesky
+cholesky.mips.tm -p${PNUM} -B32 -C16384 -t -s ${BENCHDIR}cholesky.input.tk15.O
+
+# Fmm
+# Note for fmm to adjust ${PNUM} you will need to
+# modify the input file fmm.input.08p.16348
+fmm.mips.tm < ${BENCHDIR}fmm.input.08p.16348
+
+# Ocean-Contiguous
+oceancon.mips.tm -s -o -p${PNUM} -n258
+
+# Ocean-Noncontiguous
+oceannon.mips.tm -s -o -p${PNUM} -n66
+
+# Raytrace
+raytrace.mips.tm -p${PNUM} ${BENCHDIR}raytrace.input.teapot.env
+
+# Water-Nsquared
+# Note for water-nsquared to adjust ${PNUM} you will need to
+# modify the input file water-nsquared.input.08p
+water-nsquared.mips.tm < ${BENCHDIR}water-nsquared.input.08p
+
+# Water-Spatial
+# Note for water-spatial to adjust ${PNUM} you will need to
+# modify the input file water-spatial.input.08p
+water-spatial.mips.tm < ${BENCHDIR}water-spatial.input.08p

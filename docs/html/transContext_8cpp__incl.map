@@ -1,0 +1,4 @@
+<area shape="rect" href="$transContext_8h.html" title="This is the interface for the transaction context module." alt="" coords="100,81,207,105">
+<area shape="rect" href="$transCoherence_8h.html" title="This is the interface for the global coherence module." alt="" coords="128,156,251,180">
+<area shape="rect" href="$transReport_8h.html" title="This is the interface for the transaction reporting module." alt="" coords="289,81,388,105">
+<area shape="rect" href="$transCache_8h.html" title="This is the interface for the TM cache manager." alt="" coords="5,156,104,180">

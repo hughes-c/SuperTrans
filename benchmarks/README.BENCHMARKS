@@ -1,0 +1,3 @@
+This directory contains sample, precompiled benchmarks for the SuperTrans
+Transactional Memory simulator. Please read the individual READMEs 
+inside of each directory for more information.
